@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEMCLB BANK</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div class="center-div">
+        <h1>CEMCLB BANK</h1>
+
+        <div id="login-portal">
+            <h3> Ingrese </h3> <br>
+            <label> No. Cuenta : </label> <br>
+            <input type="text" id="lAccNo" class="textbox-style margin-buttom-12" required> <br>
+            <label> Codigo Pin : </label> <br>
+            <input type="text" id="lAccPin" class="textbox-style margin-buttom-12" required> <br>
+            <button id="login-btn" class="margin-buttom-12">Ingresar</button> <br>
+            <label id="swithToReg" class="switch"> No tienes cuenta? Registrate</label>
+        </div>
+
+        <div id="register-portal">
+            <h3> Registrate </h3> <br>
+            <label> Nombre : </label> <br>
+            <input type="text" id="rAccName" class="textbox-style margin-buttom-12" required> <br>
+            <label> No. Cuenta : </label> <br>
+            <input type="text" id="rAccNo" class="textbox-style margin-buttom-12" required> <br>
+            <label> Codigo Pin : </label> <br>
+            <input type="text" id="rAccPin" class="textbox-style margin-buttom-12" required> <br>
+            <label> Confirmar Codigo Pin : </label> <br>
+            <input type="text" id="rConAccPin" class="textbox-style margin-buttom-12" required> <br>
+            <button id="register-btn" class="margin-buttom-12"> Registrate </button> <br>
+            <label id="swithToLogin" class="switch"> Tienes cuenta, Ingresa</label>
+        </div>
+
+        <div id="portal">
+            <label id="userName">....</label> <br>
+            <label id="totalBal">....</label> <br>
+
+            <div id="consult-portal">
+                <h4>Consultar Saldo: </h4>
+                <label> Cantidad: </label> <br>
+                <input type="text" id="consult-amt" class="textbox-style margin-buttom-12" required> <br>
+                <button id="consult-submit"> Depositar </a> </button> <br>
+            </div>
+
+            <div id="deposit-portal">
+                <h4>Deposita</h4><br>
+                <label> Ingresa Cantidad: </label> <br>
+                <input type="text" id="deposit-amt" class="textbox-style margin-buttom-12" required> <br>
+                <button id="dep-submit"> Depositar </a> </button> <br>
+            </div>
+
+            <div id="withdraw-portal">
+                <h4>Retira</h4> <br>
+                <label> Ingresa Cantidad: </label> <br>
+                <input type="text" id="withdraw-amt" class="textbox-style margin-buttom-12" required> <br>
+                <button id="wit-submit"> Retirar </button> <br>
+            </div>
+
+            <div id="transfer-portal">
+                <h4>Transferir</h4><br>
+                <label> Ingresa Cantidad: </label> <br>
+                <input type="text" id="transfer-amt" class="textbox-style margin-buttom-12" required> <br>
+                <label> Ingresa No de cuenta </label> <br>
+                <input type="text" id="transfer-acc-no" class="textbox-style margin-buttom-12" required> <br>
+                <button id="trans-submit"> Transferir </button> <br>
+            </div>
+
+            <div id="options">
+                <h3> Por favor selecciona una opcion </h3> <br>
+                <button> <a href="consultar-saldo.html" id="withdraw-btn"> Consultar Saldo </a></button>
+                <button> <a href="depositportal.html" id="deposit-btn"> Depositar </a></button>
+                <button> <a href="retirar.html" id="withdraw-btn"> Retirar </a></button>
+                <button> <a href="transferir.html" id="withdraw-btn"> Transferir </a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

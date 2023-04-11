@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEMCLB BANK</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div class="center-div">
+        <h1>CEMCLB BANK</h1>
+        <form id="form" onsubmit="return valida(this)">
+            <div>
+                <h4>Consultar Saldo</h4><br>
+                <td>Cantidad Disponible:
+                    <input type="number" id="number" name="amount" value="" min="100" max="">
+                </td>
+            </div>
+            <div>
+                <button id="consultbtn">Consultar</button>
+            </div>
+        </form>
+        <div id="error"></div>
+        <div id="options">
+            <h3> Por favor selecciona una opcion </h3> <br>
+            <button> <a href="depositportal.html" id="deposit-btn"> Depositar </a></button>
+            <button> <a href="retirar.html" id="withdraw-btn"> Retirar </a></button>
+            <button> <a href="transferir.html" id="withdraw-btn"> Transferir </a></button>
+            <button> <a href="atm.html" id="salir"> Salir </a></button>
+        </div>
