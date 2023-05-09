@@ -36,13 +36,13 @@ window.onload = function () {
     function loginValidation() {
         var lAccNo = document.getElementById("lAccNo").value;
         var lAccPin = document.getElementById("lAccPin").value;
-        if (lAccNo.match(accNoPat) && lAccPin.match(accPinPat)) {
-            alert("Bienvenido");
-            portal(lAccNo, lAccPin)
-        } else {
-            alert("Por favor ingresa datos validos");
-        }
-    }
+         if (lAccNo.match(accNoPat) && lAccPin.match(accPinPat)) {
+             alert("Bienvenido");
+             portal(lAccNo, lAccPin)
+         } else {
+             alert("Por favor ingresa datos validos");
+         }
+     }
 
     function registerValidation() {
         var rAccName = document.getElementById("rAccName").value;
